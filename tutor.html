@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutor.IA: práctica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="logo" href="index.html">Tutor<span>.IA</span></a>
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a class="btn btn-ghost btn-sm" href="index.html#registro">Unirme al piloto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="app">
+    <aside class="lado">
+      <h2>Temas</h2>
+      <div id="lista-temas"></div>
+      <button class="reset" id="btn-reset" type="button">Reiniciar mi progreso</button>
+    </aside>
+
+    <div class="principal">
+      <section class="panel" id="panel"></section>
+
+      <aside class="panel chat">
+        <div class="chat-head">
+          <div class="avatar">T</div>
+          <div><b>Tutor.IA</b><small>Te guío, no te doy la respuesta</small></div>
+        </div>
+        <div class="mensajes" id="mensajes" aria-live="polite"></div>
+        <div class="stats">
+          <span>Intentos: <b id="st-intentos">0</b></span>
+          <span>Pistas: <b id="st-pistas">0</b></span>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjs@13.2.0/lib/browser/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script src="js/ejercicios.js?v=2"></script>
+  <script src="js/corrector.js?v=2"></script>
+  <script src="js/tutor.js?v=2"></script>
+</body>
+</html>
